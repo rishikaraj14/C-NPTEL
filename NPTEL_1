@@ -11,7 +11,7 @@ int main(){
   Student.s1;
 s1.name = "Rishika Raj";
 s1.id = 14 ; 
-cout<<s1.id<<end1;
-cout<<s1.name<<en1;
+cout<<s1.id<<endl;
+cout<<s1.name<<endl;
 return 0;
 }
