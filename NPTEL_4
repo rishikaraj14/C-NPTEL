@@ -1,0 +1,56 @@
+#include <iostream>
+#include <math> 
+using namespace std ;
+
+class GeometryCalculations{ 
+  public : 
+      //Calculating rectangel area
+      static double AreaOfRectangle(double length , double width) {
+      return length * width ;
+   }
+      //Calculating rectangle perimeter 
+      static double PerimeterOfRectangle(double length , double width){
+      return length + width ;
+    }
+
+
+      //Calculating circle area
+      static double AreaOfcircle(double radius) {
+      return M_P! * radius * radius ;
+   }
+      //Calculating circle perimeter 
+      static double PerimeterOfcircle(double radius){
+      return 2 * radius * M_PI ;
+    }
+
+
+
+      //Calculating trainge area
+      static double AreaOfTriangle(double sideA, double sideB , double sideC) {
+      double s = (sideA + sideB + sideC) / 2.0 ;
+      return sqrt(s*(s - sideA)*(s - sideB)* (s - sideC));
+   }
+      //Calculating rectangle perimeter 
+      static double PerimeterOfTriangle(double sideA, double sideB , double sideC){
+      return  sideA + sideB + sidC ;
+    }
+};
+
+
+int main() {
+     GeometryCalculations G1 ;
+
+    cout<<"Rectangle area : "<< G1.AreaOfRectangle(2,3)<<endl;
+    cout<<"Rectangle perimeter : "<< G1.PerimeterOfRectangle(2,3)<<endl;
+
+    cout<<"Circle area : "<< G1.AreaOfCircle(12)<<endl;
+    cout<<"Circle perimeter : "<< G1.PerimeterOfCircle(12)<<endl;
+
+    cout<<"Triangle area : "<< G1.AreaOfTriangle(2,3,4)<<endl;
+    cout<<"Triangle perimeter: "<< G1.PerimeterOfTriangle(2,3,4)<<endl;
+return 0 
+}
+    
+    
+
+    
