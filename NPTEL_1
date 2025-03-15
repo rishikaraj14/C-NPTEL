@@ -7,7 +7,7 @@ class Student {
   string name;
 };
 
-int main{
+int main(){
   Student.s1;
 s1.name = "Rishika Raj";
 s1.id = 14 ; 
