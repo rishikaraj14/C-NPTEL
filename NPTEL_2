@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Box {
+  public :
+  double length ; 
+  double breath ;
+  double height ; 
+};
+
+int main () {
+    Box Box1;
+    Box Box2;
+    double volumne = 0.0;
+
+    // box 1 
+    Box1.length = 5.0;
+    Box1.breath = 6.0;
+    Box1.height = 7.0;
+
+    // box 2
+    Box2.length = 10;
+    Box2.breath = 11;
+    Box2.height = 12;
+
+    // volumne box 1 
+    volume = Box1.height *  Box1.length * Box1.breath ; 
+    cout<< "Volume of Box1 : "<< volume <<endl;
+    // volumne box 2 
+    volume = Box2.height *  Box2.length * Box2.breath ;
+    cout<< "Volume of Box2 : "<< volume <<endl;
+    return 0 ; 
+}
