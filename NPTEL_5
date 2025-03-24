@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class Complex { 
+  float real;
+  float imag;
+
+public: 
+  void setValues(float r , float i) {
+      real = r ;
+      imag = i ; 
+  }
+
+static complex multiply(const Complex &c1 , const Complex &c2) {
+  Complex resilt ;
+  result.real = c1.real * c2.real - c1.imag * c2.imag ; 
+  result.imag = c1.real * c2.imag + c1.imag * c2.real ;
+  return result;
+}
+
+void display() {
+  if (imag >=0)
+    cout<< real << "+" << imag << "i" << endl;
+  else 
+      cout<<real<<"-"<< - imag << "i" << endl;
+  }
+};
