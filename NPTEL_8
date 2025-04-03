@@ -1,0 +1,25 @@
+//inheritance 
+#include <isotream>
+using namespace std;
+
+class Animal {
+    public : 
+      void eat () {
+        cout << "Animal is eating "<< endl;
+    }
+};
+
+class Dog : public Animal {
+    public :
+      void bark () {
+        cout << "Dog is barking "<< endl;
+    }
+};
+
+int main () {
+    Dog MyDog ; 
+
+    MyDog.eat();
+    MyDog.bark();
+  return 0 ;
+}
