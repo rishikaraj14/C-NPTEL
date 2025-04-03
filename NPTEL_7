@@ -1,0 +1,58 @@
+#include <iostream>
+#include <string>
+using namespace std ; 
+
+class Employee {
+private : 
+    int id;
+    string name; 
+    int age ; 
+    double salary;
+
+public:
+    Employee() {
+      id = 0 ;
+      name = "Unknown";
+      age = 18;
+      salary = 0.0 ; 
+      cout << "Employee with id : "<< id << endl;
+}
+
+  Employee (int empID, string empName , int empAge , double empSalary) {
+    id = empId;
+    name = empName;
+    age = empAge;
+    salary = empSalary;
+    cout<< "emp id is : " << id <<endl;
+}
+
+  vodi displayDeatils() const { 
+    cout << "Employee ID: " << id << endl;
+    cout << "Employee Name: " << name << endl;
+    cout << "Employee Age : " << age << endl;
+    cout << "Employee salary : " << salary << endl;
+  }
+
+  void updateSalary (double newSalary) {
+    salary = newSalary ;
+    cout << ""Salary of the id ""<< id << "has been updated to : " << salary<< endl;
+  }
+};
+
+int main() {
+  Employee emp1;
+  emp1.dispalyDetails();
+  emp1.updatesalary(30000);
+  emp1.displayDetails();
+  cout<<endl;
+
+  Employee emp2(99,"AShwin ", 38 , 400000);
+  emp2.displayDetails();
+
+  emp2.updateSalary (500000);
+  emp2.displayDeatils();
+
+    return 0 ; 
+}
+
+    
